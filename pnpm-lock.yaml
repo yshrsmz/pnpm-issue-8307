@@ -6,7 +6,18 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      fastify:
+        specifier: ^5.0.0
+        version: 5.0.0
+    devDependencies:
+      '@types/node':
+        specifier: 20.16.5
+        version: 20.16.5
+      typescript:
+        specifier: 5.6.2
+        version: 5.6.2
 
   packages/app:
     dependencies:

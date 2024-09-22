@@ -1,5 +1,4 @@
 import Fastify from 'fastify'
-import {getMessage} from 'lib'
 
 const fastify = Fastify({
   logger: true
@@ -7,7 +6,7 @@ const fastify = Fastify({
 
 // Declare a route
 fastify.get('/', function (request, reply) {
-  reply.send({ message: getMessage(request.url) })
+  reply.send({ message: `hello from ${request.url}` })
 })
 
 // Run the server!
